@@ -12,7 +12,7 @@ class TopicRow extends StatelessWidget {
       width: double.infinity,
       margin: const EdgeInsets.symmetric(horizontal: 24),
       child: Container(
-        margin: EdgeInsets.only(bottom: 9),
+        margin: const EdgeInsets.only(bottom: 9),
         child: IntrinsicHeight(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,

@@ -14,12 +14,10 @@ class PlanetChooseScreen extends StatefulWidget {
   State<PlanetChooseScreen> createState() => _PlanetChooseScreenState();
 }
 
-
 class _PlanetChooseScreenState extends State<PlanetChooseScreen> {
   CrossAxisAlignment _crossAxisAlignment = CrossAxisAlignment.start;
   String _planetImageUrl = 'assets/images/earth.jpg';
   Color _background = AppTheme.backgroundColor;
-  
 
   void _generateNewPlanet() {
     setState(() {
@@ -28,7 +26,7 @@ class _PlanetChooseScreenState extends State<PlanetChooseScreen> {
     });
   }
 
-  void checkAnswer(Color color){
+  void checkAnswer(Color color) {
     setState(() {
       _background = color;
     });
@@ -48,10 +46,10 @@ class _PlanetChooseScreenState extends State<PlanetChooseScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:_background,
+        backgroundColor: _background,
         elevation: 0,
       ),
-      backgroundColor:_background,
+      backgroundColor: _background,
       body: Column(
         crossAxisAlignment: _crossAxisAlignment,
         children: [
